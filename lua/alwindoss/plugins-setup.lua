@@ -30,8 +30,19 @@ end
 return packer.startup(function(use)
   -- packer can manage itself
   use("wbthomason/packer.nvim")
+
+  use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
+
+
   use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
   use("bluz71/vim-nightfly-colors")
+
+  use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
+  use("szw/vim-maximizer") -- maximizes and restores current window
+
+  -- essential plugins
+  use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
+  use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
   if packer_bootstrap then
     require("packer").sync()
