@@ -1,15 +1,24 @@
+-- set leader key to space
 vim.g.mapleader = " "
-local keymap = vim.keymap
 
--- general keymaps
+local keymap = vim.keymap -- for conciseness
+
+---------------------
+-- General Keymaps
+---------------------
+
+-- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
+
+-- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
--- in normal mode when x is pressed it deletes but does not copy the character to the register
+-- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
-keymap.set("n", "<leader>+", "<C-a>")
-keymap.set("n", "<leader>-", "<C-x>")
+-- increment/decrement numbers
+keymap.set("n", "<leader>+", "<C-a>") -- increment
+keymap.set("n", "<leader>-", "<C-x>") -- decrement
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
@@ -22,11 +31,15 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
--- vim maximizer
-keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
+----------------------
+-- Plugin Keybinds
+----------------------
+
+-- vim-maximizer
+keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
