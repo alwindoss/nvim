@@ -9,6 +9,6 @@ Neovim configuration
 
 ## Prerequisites
 
-- Ensure the Meslo Nerd font is installed from the [nerdfonts.com]("https://www.nerdfonts.com/font-downloads") website
+- Ensure the Meslo Nerd font is installed from the [nerdfonts.com](https://www.nerdfonts.com/font-downloads) website
 - Ensure `rg` is installed [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
 
