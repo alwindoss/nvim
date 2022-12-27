@@ -56,3 +56,8 @@ keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current c
 
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
+
+-- go keymaps
+keymap.set("n", "<leader>gob", "<cmd>GoBuild<cr>")
+keymap.set("n", "<leader>gor", "<cmd>GoRun<cr>")
+keymap.set("n", "<leader>got", "<cmd>GoTest<cr>")
