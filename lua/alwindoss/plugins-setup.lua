@@ -104,6 +104,9 @@ return packer.startup(function(use)
 	use("fatih/vim-go")
 	use("SirVer/ultisnips")
 
+	-- Terminal
+	use("akinsho/toggleterm.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
