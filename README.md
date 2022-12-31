@@ -1,4 +1,5 @@
 # nvim
+
 Neovim configuration
 
 ## Instructions to use
@@ -11,4 +12,4 @@ Neovim configuration
 
 - Ensure the Meslo Nerd font is installed from the [nerdfonts.com](https://www.nerdfonts.com/font-downloads) website
 - Ensure `rg` is installed [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
-
+- Ensure [Lazy Git](https://github.com/jesseduffield/lazygit) is installed if you want to use the LazyGit in neovim
