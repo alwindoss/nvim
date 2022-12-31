@@ -61,3 +61,6 @@ keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if ne
 keymap.set("n", "<leader>gob", "<cmd>GoBuild<cr>")
 keymap.set("n", "<leader>gor", "<cmd>GoRun<cr>")
 keymap.set("n", "<leader>got", "<cmd>GoTest<cr>")
+
+-- lazygit keymaps
+keymap.set("n", "<leader>lz", "<cmd>lua _LAZYGIT_TOGGLE()<cr>", { noremap = true, silent = true })
