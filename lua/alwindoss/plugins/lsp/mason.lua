@@ -20,9 +20,9 @@ return {
         icons = {
           package_installed = "✓",
           package_pending = "➜",
-          package_uninstalled = "✗"
-        }
-      }
+          package_uninstalled = "✗",
+        },
+      },
     })
 
     mason_lspconfig.setup({
@@ -40,7 +40,8 @@ return {
         "pyright",
         "gopls",
         "clangd",
-        "rust_analyzer"
+        "rust_analyzer",
+        "volar",
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
@@ -50,7 +51,7 @@ return {
       -- list of formatters & linters for mason to install
       ensure_installed = {
         "prettier", -- ts/js formatter
-        "stylua",   -- lua formatter
+        "stylua", -- lua formatter
         "eslint_d", -- ts/js linter
       },
       -- auto-install configured servers (with lspconfig)

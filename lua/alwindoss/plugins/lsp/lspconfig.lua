@@ -111,6 +111,19 @@ return {
       end,
     })
 
+    -- configure volar
+    -- to enable volar run the command "npm -g install @vue/language-server"
+    lspconfig["volar"].setup({
+      filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
+      init_options = {
+        typescript = {
+          tsdk = "/path/to/.npm/lib/node_modules/typescript/lib",
+          -- Alternative location if installed as root:
+          -- tsdk = '/usr/local/lib/node_modules/typescript/lib'
+        },
+      },
+    })
+
     -- configure prisma orm server
     lspconfig["prismals"].setup({
       capabilities = capabilities,
