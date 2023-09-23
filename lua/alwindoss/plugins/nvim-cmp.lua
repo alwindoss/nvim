@@ -36,6 +36,8 @@ return {
         ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
         ["<C-e>"] = cmp.mapping.abort(), -- close completion window
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
+        ["<TAB>"] = cmp.mapping.select_next_item(),
+        ["<S-TAB>"] = cmp.mapping.select_prev_item(),
       }),
       -- sources for autocompletion
       sources = cmp.config.sources({

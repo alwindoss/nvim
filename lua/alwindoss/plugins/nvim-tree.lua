@@ -20,7 +20,7 @@ return {
       -- change folder arrow icons
       renderer = {
         indent_markers = {
-          enable = true
+          enable = true,
         },
         icons = {
           glyphs = {
