@@ -1,0 +1,14 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.editor.telescope",
+    "lazyvim.plugins.extras.lang.go",
+    "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.tailwind",
+    "lazyvim.plugins.extras.lang.yaml",
+    "lazyvim.plugins.extras.test.core"
+  ],
+  "news": {
+    "NEWS.md": "10960"
+  },
+  "version": 7
+}
